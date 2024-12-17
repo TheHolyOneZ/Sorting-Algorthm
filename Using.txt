@@ -1,0 +1,67 @@
+TheZsSorter Usage Guide
+======================
+
+1. When to Use
+-------------
+The ChaosSorter is particularly effective for:
+- Medium to large datasets (1000+ elements)
+- Data with mixed patterns
+- Scenarios where adaptive sorting is beneficial
+- Cases where memory efficiency is important
+- Datasets that may be partially sorted
+
+2. Best Use Cases
+----------------
+✓ General Purpose Sorting: Handles various data patterns efficiently
+✓ Nearly Sorted Data: Adaptive threshold optimizes performance
+✓ Large Datasets: Ninja partition technique reduces complexity
+✓ Memory Constrained Environments: In-place sorting capabilities
+✓ Analytics Pipeline: Built-in performance metrics
+
+3. Code Examples
+---------------
+Basic Usage:
+    sorter = TheZs()
+    sorted_array, stats = sorter.chaos_sort(your_array)
+
+Performance Analysis:
+    analyzer = TheZsChaosSorterAnalyzer()
+    results = analyzer.analyze_performance()
+
+4. Performance Characteristics
+----------------------------
+- Time Complexity: O(n log n) average case
+- Space Complexity: O(n) worst case
+- Adaptive Threshold: Auto-tunes based on input size
+- Recursion Depth: Controlled and optimized
+
+5. Advanced Features
+-------------------
+- Binary search optimization for insertion points
+- Ninja pivot selection for better partitioning
+- Adaptive threshold adjustment
+- Comprehensive performance statistics
+- Built-in analysis capabilities
+
+6. Tips for Optimal Usage
+------------------------
+1. For small arrays (<50 elements), let the adaptive threshold work
+2. Enable auto-tuning for unknown data distributions
+3. Use the analyzer for performance profiling
+4. Monitor recursion depth for very large datasets
+5. Consider memory usage for huge arrays
+
+7. Limitations
+-------------
+- Not stable sort (equal elements may reorder)
+- Memory usage increases with recursion depth
+- May not be optimal for extremely small datasets
+
+8. Integration Tips
+------------------
+- Use SortStats for monitoring performance
+- Implement error handling for edge cases
+- Consider parallel processing for huge datasets
+- Log performance metrics for optimization
+
+Remember: The TheZs shines when dealing with diverse data patterns and adapts to different input sizes automatically!
